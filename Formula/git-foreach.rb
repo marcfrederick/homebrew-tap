@@ -1,21 +1,21 @@
 class GitForeach < Formula
   desc "Run a command in each git repository in a directory"
   homepage "https://github.com/marcfrederick/git-foreach"
-  version "0.3.0"
+  version "0.4.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/marcfrederick/git-foreach/releases/download/v0.3.0/git-foreach-aarch64-apple-darwin.tar.xz"
-      sha256 "895d6e784682193a6eebc9e62dbb4b7f1e9107b643d3873a29490a84fde0bc2a"
+      url "https://github.com/marcfrederick/git-foreach/releases/download/v0.4.0/git-foreach-aarch64-apple-darwin.tar.xz"
+      sha256 "e5417e9a21434b3bcbcf97fd966633a4b1e57bdc16606afb18543059d7eb3b17"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/marcfrederick/git-foreach/releases/download/v0.3.0/git-foreach-x86_64-apple-darwin.tar.xz"
-      sha256 "181ce918c3d2da84d92012bc59e758b85519dec4a954202ead998df0b3295a94"
+      url "https://github.com/marcfrederick/git-foreach/releases/download/v0.4.0/git-foreach-x86_64-apple-darwin.tar.xz"
+      sha256 "f719bcd84b5967623bf8b7277485e939d7b347d0374d9f2778dab90d577682fe"
     end
   end
   if OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/marcfrederick/git-foreach/releases/download/v0.3.0/git-foreach-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "bd65bd9cc7a564d84bfd287e907f5dfd2a2c10885ac85db08ecbd1736a98e246"
+      url "https://github.com/marcfrederick/git-foreach/releases/download/v0.4.0/git-foreach-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "0d78561bd5e4551da6b0e7e986aa31d380861f6c94efe4dd240176977aaeb0af"
     end
   end
 
