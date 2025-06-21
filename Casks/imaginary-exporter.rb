@@ -2,7 +2,7 @@
 cask "imaginary-exporter" do
   desc "Prometheus exporter for Imaginary"
   homepage ""
-  version "0.2.2"
+  version "0.2.3"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "imaginary-exporter" do
 
   on_macos do
     on_intel do
-      url "https://github.com/marcfrederick/imaginary-exporter/releases/download/v0.2.2/imaginary-exporter_Darwin_x86_64.tar.gz"
-      sha256 "1ea1b16a6c6ac7585039058f50b300d877a23a2218d87d95779ca6ec404c2edd"
+      url "https://github.com/marcfrederick/imaginary-exporter/releases/download/v0.2.3/imaginary-exporter_Darwin_x86_64.tar.gz"
+      sha256 "994473eb0504aaa2dec84d662f77a29679a24d9254a9a86f059b001a1e7ecd84"
     end
     on_arm do
-      url "https://github.com/marcfrederick/imaginary-exporter/releases/download/v0.2.2/imaginary-exporter_Darwin_arm64.tar.gz"
-      sha256 "f66c5e192b3ffd773eb2b47f2039b8cf543548029d07baf16d916757cc7cb5f4"
+      url "https://github.com/marcfrederick/imaginary-exporter/releases/download/v0.2.3/imaginary-exporter_Darwin_arm64.tar.gz"
+      sha256 "8d8697f81f87fd6c7e368bb635f8251dca05e2dd9be5db508c9345b363fa48c8"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcfrederick/imaginary-exporter/releases/download/v0.2.2/imaginary-exporter_Linux_x86_64.tar.gz"
-      sha256 "b242f53278443124abccbe533ec33165beec1212cbb9d372e0ce2f67b8d35d65"
+      url "https://github.com/marcfrederick/imaginary-exporter/releases/download/v0.2.3/imaginary-exporter_Linux_x86_64.tar.gz"
+      sha256 "b6aec9dd0c55fe3217df3979bb9d30d5c3a578bf186a6c4d096cc2489c491dc7"
     end
     on_arm do
-      url "https://github.com/marcfrederick/imaginary-exporter/releases/download/v0.2.2/imaginary-exporter_Linux_arm64.tar.gz"
-      sha256 "584fd516e576761a432b485360c0dc91691576c2b1f7827fafe1add638c8901c"
+      url "https://github.com/marcfrederick/imaginary-exporter/releases/download/v0.2.3/imaginary-exporter_Linux_arm64.tar.gz"
+      sha256 "52aeb0d04643efc43230fa8ea55d78395297cd835ba8edf83acb0f088ecfd49c"
     end
   end
 
