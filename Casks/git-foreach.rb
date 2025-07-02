@@ -2,7 +2,7 @@
 cask "git-foreach" do
   desc "Utility to recursively run commands in Git repositories."
   homepage ""
-  version "0.4.4"
+  version "0.4.5"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "git-foreach" do
 
   on_macos do
     on_intel do
-      url "https://github.com/marcfrederick/git-foreach/releases/download/v0.4.4/git-foreach_0.4.4_darwin_amd64.tar.gz"
-      sha256 "259a73ba43961b335f75fae50f6b91a61364e6d5359e29f29e05da62ad481eba"
+      url "https://github.com/marcfrederick/git-foreach/releases/download/v0.4.5/git-foreach_0.4.5_darwin_amd64.tar.gz"
+      sha256 "0978d2bb431f21ec55053f4b4f3c05e3b5d58c20c8d4c206e64f9f24ca0b7c0c"
     end
     on_arm do
-      url "https://github.com/marcfrederick/git-foreach/releases/download/v0.4.4/git-foreach_0.4.4_darwin_arm64.tar.gz"
-      sha256 "e66357e5855523fd8e5b65d785c404c5e35423fc5df234564552908b4f8dc0e7"
+      url "https://github.com/marcfrederick/git-foreach/releases/download/v0.4.5/git-foreach_0.4.5_darwin_arm64.tar.gz"
+      sha256 "3b197491c3b7891d6ad4ecac88e01246c966dbfee3a91a13cfaec7a8bde0c814"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcfrederick/git-foreach/releases/download/v0.4.4/git-foreach_0.4.4_linux_amd64.tar.gz"
-      sha256 "478af07975ef887bd436e1ac51bb513f444b81a2df3363200c471bd0b7792f90"
+      url "https://github.com/marcfrederick/git-foreach/releases/download/v0.4.5/git-foreach_0.4.5_linux_amd64.tar.gz"
+      sha256 "c93f4285b2ede5f7feb28e08bbb33dd987fe8fde9d5c3d1d66eac482db86006c"
     end
     on_arm do
-      url "https://github.com/marcfrederick/git-foreach/releases/download/v0.4.4/git-foreach_0.4.4_linux_arm64.tar.gz"
-      sha256 "768b5896061c7f2709f7770c1a0b08562f4343f870fb2c1c2b8b99cd04b44157"
+      url "https://github.com/marcfrederick/git-foreach/releases/download/v0.4.5/git-foreach_0.4.5_linux_arm64.tar.gz"
+      sha256 "9cdfc5dad266965038f7674a70abdfed374f922db33e10942f054d2a86da5a2a"
     end
   end
 
