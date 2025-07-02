@@ -2,6 +2,9 @@ class GitForeach < Formula
   desc "Run a command in each git repository in a directory"
   homepage "https://github.com/marcfrederick/git-foreach"
   version "0.4.3"
+
+  deprecate! date: "2025-07-02", because: "has been replaced by the `git-foreach` cask" replacement_cask: "git-foreach"
+
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/marcfrederick/git-foreach/releases/download/v0.4.3/git-foreach-aarch64-apple-darwin.tar.xz"
