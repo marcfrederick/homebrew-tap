@@ -3,7 +3,7 @@ class GitForeach < Formula
   homepage "https://github.com/marcfrederick/git-foreach"
   version "0.4.3"
 
-  deprecate! date: "2025-07-02", because: "has been replaced by the `git-foreach` cask" replacement_cask: "git-foreach"
+  deprecate! date: "2025-07-02", because: "has been replaced by the `git-foreach` cask", replacement_cask: "git-foreach"
 
   if OS.mac?
     if Hardware::CPU.arm?
