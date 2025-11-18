@@ -1,13 +1,15 @@
 class Assume < Formula
   desc      "Interactive AWS profile switcher with automatic SSO login support"
   homepage "https://github.com/marcfrederick/assume"
-  url      "https://github.com/marcfrederick/assume/archive/refs/tags/v0.0.1.tar.gz"
-  sha256   "915017c703e0501918a4d801c734a14b32568bbfb0ca10b738934170a6a913b9"
+  url      "https://github.com/marcfrederick/assume/archive/refs/tags/v0.0.2.tar.gz"
+  sha256   "8478e42aa8b22a8c0157de2f8ff5227854124762bc44b5ea566aaab972eb396d"
   license   "GPL-3.0-or-later"
   head      "https://github.com/marcfrederick/assume.git", branch: "main"
 
   depends_on "awscli"
+  depends_on "bash"
   depends_on "fzf"
+  depends_on "yq"
 
   def install
     bin.install "assume"
