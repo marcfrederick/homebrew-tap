@@ -6,6 +6,8 @@ class TofuTargetFile < Formula
   license   "GPL-3.0-or-later"
   head      "https://github.com/marcfrederick/tofu-target-file.git", branch: "main"
 
+  deprecate! date: "2026-05-01", because: "has been replaced by the `tofu-target-file` cask", replacement_cask: "tofu-target-file"
+
   depends_on "bash"
 
   def install
