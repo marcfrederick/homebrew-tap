@@ -1,30 +1,33 @@
 class GitForeach < Formula
   desc "Run a command in each git repository in a directory"
   homepage "https://github.com/marcfrederick/git-foreach"
-  version "0.4.3"
-
-  deprecate! date: "2025-07-02", because: "has been replaced by the `git-foreach` cask", replacement_cask: "git-foreach"
-
+  version "0.5.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/marcfrederick/git-foreach/releases/download/v0.4.3/git-foreach-aarch64-apple-darwin.tar.xz"
-      sha256 "38a1450fae131fe9abf010309650eace7cb4b6c4b892c1690fffa13e243d5d91"
+      url "https://github.com/marcfrederick/git-foreach/releases/download/v0.5.0/git-foreach-aarch64-apple-darwin.tar.xz"
+      sha256 "0699e31cbfd99c963c5fbae796978ccb8e4e6df028f2d0376a4232169b79cc7d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/marcfrederick/git-foreach/releases/download/v0.4.3/git-foreach-x86_64-apple-darwin.tar.xz"
-      sha256 "120c48fc7f0714549c7ae8478b871d6b0e9f92e7461540ffd4cbea59ae7f96a9"
+      url "https://github.com/marcfrederick/git-foreach/releases/download/v0.5.0/git-foreach-x86_64-apple-darwin.tar.xz"
+      sha256 "98a8ab50dd5fd43c09d79cf5dc7050b800b87ca95b8614c37c33f113f4b4a44e"
     end
   end
-  if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/marcfrederick/git-foreach/releases/download/v0.4.3/git-foreach-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "d1987a18e7668a79057c7e3da201c578f8ce19cb35a515ad26eaf0a25f4d5db5"
+  if OS.linux?
+    if Hardware::CPU.arm?
+      url "https://github.com/marcfrederick/git-foreach/releases/download/v0.5.0/git-foreach-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "ea8b4bfbcbb68dae3272d1bc149597efbe2c84aa1dc494546c4fed626181d198"
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/marcfrederick/git-foreach/releases/download/v0.5.0/git-foreach-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "0c5ce8146c83151fd6dd8d9e2f0e121b47f6fe81863572d2c7f6e96608d658b0"
+    end
   end
   license any_of: ["MIT", "Apache-2.0"]
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":              {},
+    "aarch64-unknown-linux-gnu":         {},
     "x86_64-apple-darwin":               {},
-    "x86_64-pc-windows-gnu":             {},
     "x86_64-unknown-linux-gnu":          {},
     "x86_64-unknown-linux-musl-dynamic": {},
     "x86_64-unknown-linux-musl-static":  {},
@@ -48,6 +51,7 @@ class GitForeach < Formula
   def install
     bin.install "git-foreach" if OS.mac? && Hardware::CPU.arm?
     bin.install "git-foreach" if OS.mac? && Hardware::CPU.intel?
+    bin.install "git-foreach" if OS.linux? && Hardware::CPU.arm?
     bin.install "git-foreach" if OS.linux? && Hardware::CPU.intel?
 
     install_binary_aliases!
