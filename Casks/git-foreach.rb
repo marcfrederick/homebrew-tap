@@ -4,6 +4,8 @@ cask "git-foreach" do
   homepage ""
   version "0.4.5"
 
+  disable! date: "2026-06-28", because: "has been replaced by the `git-foreach` formula", replacement_formula: "git-foreach"
+
   livecheck do
     skip "Auto-generated on release."
   end
